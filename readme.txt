@@ -67,3 +67,7 @@ License: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 
 * Images in theme screesnhot.png are from: http://deathtothestockphoto.com/
 Licence: Distributed under the terms of GPL http://deathtostock.wpengine.com/wp-content/uploads/Death-to-the-Stock-Photo-Photograph-End-User-License-8-2015.pdf
+
+### Initial Starter Theme
+Shamrock https://wordpress.org/themes/shamrock/
+License: Distributed under the terms of GPL

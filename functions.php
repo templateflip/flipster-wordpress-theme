@@ -111,11 +111,11 @@ function shamrock_load_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'smr-owl-carousel', JS_URI . 'jquery.owl.carousel.min.js', array( 'jquery' ), THEME_VERSION, true );
+	//wp_enqueue_script( 'smr-owl-carousel', JS_URI . 'jquery.owl.carousel.min.js', array( 'jquery' ), THEME_VERSION, true );
 
-	wp_enqueue_script( 'smr-magnific-popup', JS_URI . 'jquery.magnific-popup.min.js', array( 'jquery' ), THEME_VERSION, true );
+	//wp_enqueue_script( 'smr-magnific-popup', JS_URI . 'jquery.magnific-popup.min.js', array( 'jquery' ), THEME_VERSION, true );
 
-	wp_enqueue_script( 'smr-fitvids', JS_URI . 'jquery.fitvids.js', array( 'jquery' ), THEME_VERSION, true );
+	//wp_enqueue_script( 'smr-fitvids', JS_URI . 'jquery.fitvids.js', array( 'jquery' ), THEME_VERSION, true );
 
 	wp_enqueue_script( 'smr-custom', JS_URI . 'custom.js', array( 'jquery' ), THEME_VERSION, true );
 
