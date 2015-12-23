@@ -1,0 +1,820 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-10-06 12:12+0100\n"
+"PO-Revision-Date: 2015-10-06 12:12+0100\n"
+"Last-Translator: MeksHQ <support@mekshq.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:7
+msgid "404 error: Page not found"
+msgstr ""
+
+#: ../404.php:11
+msgid ""
+"The page that you are looking for doesn&rsquo;t exist on this website. You "
+"may have accidentally mistype the page address, or followed an expired link. "
+"Anyway, we will help you get back on track. Why don&rsquo;t you try "
+"searching for an article?"
+msgstr ""
+
+#: ../comments.php:12 ../include/helpers.php:277
+msgid "Add Comment"
+msgstr ""
+
+#: ../comments.php:12 ../include/helpers.php:277
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:12 ../include/helpers.php:277
+msgid "% Comments"
+msgstr ""
+
+#: ../searchform.php:2
+msgid "Type here to search..."
+msgstr ""
+
+#: ../include/helpers.php:35
+msgid "Standard (with sidebar)"
+msgstr ""
+
+#: ../include/helpers.php:54 ../include/options.php:83
+#: ../include/options.php:206
+msgid "Full Width (no sidebar)"
+msgstr ""
+
+#: ../include/helpers.php:232
+msgid "Sticky"
+msgstr ""
+
+#: ../include/helpers.php:264
+msgid "by"
+msgstr ""
+
+#: ../include/helpers.php:270
+msgid "min read"
+msgstr ""
+
+#: ../include/menus.php:9
+msgid "Main Navigation"
+msgstr ""
+
+#: ../include/menus.php:10
+msgid "Social Menu"
+msgstr ""
+
+#: ../include/menus.php:11
+msgid "Footer Menu"
+msgstr ""
+
+#: ../include/options.php:22
+msgid "Header"
+msgstr ""
+
+#: ../include/options.php:23
+msgid "These are setting for your website header/navigation area"
+msgstr ""
+
+#: ../include/options.php:29
+msgid "Logo"
+msgstr ""
+
+#: ../include/options.php:30
+msgid "Upload your logo"
+msgstr ""
+
+#: ../include/options.php:38
+msgid "Display site description"
+msgstr ""
+
+#: ../include/options.php:46
+msgid "Include social icons in navigation"
+msgstr ""
+
+#: ../include/options.php:54
+msgid "Include search in navigation"
+msgstr ""
+
+#: ../include/options.php:63
+msgid "Blog"
+msgstr ""
+
+#: ../include/options.php:64
+msgid "These are general blog settings for your archive pages"
+msgstr ""
+
+#: ../include/options.php:70
+msgid "RTL mode"
+msgstr ""
+
+#: ../include/options.php:78
+msgid "Blog layout"
+msgstr ""
+
+#: ../include/options.php:82 ../include/options.php:205
+msgid "With Sidebar"
+msgstr ""
+
+#: ../include/options.php:90 ../include/options.php:213
+msgid "Display featured image"
+msgstr ""
+
+#: ../include/options.php:98
+msgid "Deafult featured image"
+msgstr ""
+
+#: ../include/options.php:99
+msgid ""
+"Upload an image to display it for posts which don't have featured image set"
+msgstr ""
+
+#: ../include/options.php:114 ../include/options.php:221
+msgid "Display category"
+msgstr ""
+
+#: ../include/options.php:122 ../include/options.php:229
+msgid "Display post meta data"
+msgstr ""
+
+#: ../include/options.php:126 ../include/options.php:233
+msgid "Date"
+msgstr ""
+
+#: ../include/options.php:127 ../include/options.php:234
+#: ../include/widgets/posts.php:234
+msgid "Author"
+msgstr ""
+
+#: ../include/options.php:128 ../include/options.php:235
+#: ../include/widgets/posts.php:236
+msgid "Reading time"
+msgstr ""
+
+#: ../include/options.php:129 ../include/options.php:236
+#: ../include/widgets/posts.php:235
+msgid "Comments"
+msgstr ""
+
+#: ../include/options.php:136
+msgid "Content limit type"
+msgstr ""
+
+#: ../include/options.php:140
+msgid "Manual (using &lt;!--more--&gt; tag)"
+msgstr ""
+
+#: ../include/options.php:141
+msgid "Automatic (excerpt)"
+msgstr ""
+
+#: ../include/options.php:148
+msgid "Excerpt length"
+msgstr ""
+
+#: ../include/options.php:149
+msgid "Specify your excerpt length (number of characters)"
+msgstr ""
+
+#: ../include/options.php:164
+msgid "Excerpt \"more\" string"
+msgstr ""
+
+#: ../include/options.php:165
+msgid "Specify more string to append after excerpts"
+msgstr ""
+
+#: ../include/options.php:180
+msgid "Pagination"
+msgstr ""
+
+#: ../include/options.php:184
+msgid "Numeric"
+msgstr ""
+
+#: ../include/options.php:185
+msgid "Classic (prev/next)"
+msgstr ""
+
+#: ../include/options.php:193
+msgid "Single Post"
+msgstr ""
+
+#: ../include/options.php:194
+msgid "These are settings which are applied to your single post template"
+msgstr ""
+
+#: ../include/options.php:201
+msgid "Single posts layout"
+msgstr ""
+
+#: ../include/options.php:243
+msgid "Display tags"
+msgstr ""
+
+#: ../include/options.php:251
+msgid "Display previous/next post links"
+msgstr ""
+
+#: ../include/options.php:259
+msgid "Previous/next links to posts from same category?"
+msgstr ""
+
+#: ../include/options.php:274
+msgid "Display author info"
+msgstr ""
+
+#: ../include/options.php:285
+msgid "Colors"
+msgstr ""
+
+#: ../include/options.php:286
+msgid "Use these settings to manage theme colors."
+msgstr ""
+
+#: ../include/options.php:292
+msgid "Background color"
+msgstr ""
+
+#: ../include/options.php:293
+msgid "Used for body background"
+msgstr ""
+
+#: ../include/options.php:302
+msgid "Text color"
+msgstr ""
+
+#: ../include/options.php:303
+msgid "This is the color for standard text"
+msgstr ""
+
+#: ../include/options.php:312
+msgid "Headings color"
+msgstr ""
+
+#: ../include/options.php:313
+msgid "Used for titles, navigation and H elements"
+msgstr ""
+
+#: ../include/options.php:322
+msgid "Accent color"
+msgstr ""
+
+#: ../include/options.php:323
+msgid "Used for links, buttons and some special elements"
+msgstr ""
+
+#: ../include/options.php:332
+msgid "Category color"
+msgstr ""
+
+#: ../include/options.php:333
+msgid "This is default color for category links/buttons"
+msgstr ""
+
+#: ../include/options.php:342
+msgid "Meta color "
+msgstr ""
+
+#: ../include/options.php:343
+msgid "Used for meta elements and some labels"
+msgstr ""
+
+#: ../include/options.php:354
+msgid "Image Sizes"
+msgstr ""
+
+#: ../include/options.php:355
+msgid ""
+"Theme will optionally generate two additional image sizes to fit the design. "
+"When you change this options, it is highy reccomemnded to run Force "
+"Regenerate Thumbnails plugin afterwards."
+msgstr ""
+
+#: ../include/options.php:361
+msgid "Generate standard featured image"
+msgstr ""
+
+#: ../include/options.php:362
+msgid "Used for regular templates with sidebar"
+msgstr ""
+
+#: ../include/options.php:370
+msgid "Standard featured image ratio"
+msgstr ""
+
+#: ../include/options.php:373 ../include/options.php:426
+msgid "Original (do not crop)"
+msgstr ""
+
+#: ../include/options.php:374 ../include/options.php:427
+msgid "4:3"
+msgstr ""
+
+#: ../include/options.php:375 ../include/options.php:428
+msgid "16:9"
+msgstr ""
+
+#: ../include/options.php:376 ../include/options.php:429
+msgid "Your custom ratio"
+msgstr ""
+
+#: ../include/options.php:393
+msgid "Specify your custom ratio for standard images (x:y)"
+msgstr ""
+
+#: ../include/options.php:414
+msgid "Generate full width featured image"
+msgstr ""
+
+#: ../include/options.php:415
+msgid "Used for templates with no sidebar"
+msgstr ""
+
+#: ../include/options.php:423
+msgid "Full width featured image ratio"
+msgstr ""
+
+#: ../include/options.php:445
+msgid "Specify your custom ratio for full width images (x:y)"
+msgstr ""
+
+#: ../include/plugins.php:103
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: ../include/plugins.php:104
+msgid "Shamrock Plugins"
+msgstr ""
+
+#: ../include/plugins.php:105
+#: ../include/classes/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../include/plugins.php:106
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../include/plugins.php:117
+#: ../include/classes/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../include/plugins.php:118
+#: ../include/classes/class-tgm-plugin-activation.php:177
+#: ../include/classes/class-tgm-plugin-activation.php:1956
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../include/plugins.php:119
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../include/sidebars.php:13
+msgid "Home Sidebar"
+msgstr ""
+
+#: ../include/sidebars.php:14
+msgid "This sidebar is used for home page."
+msgstr ""
+
+#: ../include/sidebars.php:24
+msgid "Post Sidebar"
+msgstr ""
+
+#: ../include/sidebars.php:25
+msgid "This sidebar is used for single post templates."
+msgstr ""
+
+#: ../include/sidebars.php:35
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../include/sidebars.php:36
+msgid "This sidebar is used for your pages."
+msgstr ""
+
+#: ../include/sidebars.php:46
+msgid "Archive Sidebar"
+msgstr ""
+
+#: ../include/sidebars.php:47
+msgid "This sidebar is used for category, tag and other archive templates."
+msgstr ""
+
+#: ../include/snippets.php:55
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:532
+#: ../include/classes/class-tgm-plugin-activation.php:2173
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1167
+#: ../include/classes/class-tgm-plugin-activation.php:1348
+msgid "Private Repository"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1170
+#: ../include/classes/class-tgm-plugin-activation.php:1351
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1175
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1178
+msgid "Required"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1178
+msgid "Recommended"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1181
+msgid "Not Installed"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1183
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1288
+#: ../include/classes/class-tgm-plugin-activation.php:1409
+msgid "Install"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1312
+#: ../include/classes/class-tgm-plugin-activation.php:1410
+msgid "Activate"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1372
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1388
+msgid "Plugin"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1389
+msgid "Source"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1390
+msgid "Type"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1391
+msgid "Status"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1939
+msgid "Install package not available."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1940
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1941
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1942
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1943
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1944
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:1955
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2069
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2070
+#: ../include/classes/class-tgm-plugin-activation.php:2079
+msgid "Show Details"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2070
+#: ../include/classes/class-tgm-plugin-activation.php:2079
+msgid "Hide Details"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2071
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2076
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2077
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2078
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2079
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2080
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../include/classes/class-tgm-plugin-activation.php:2081
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../include/widgets/posts.php:11
+msgid "Display your posts with this widget"
+msgstr ""
+
+#: ../include/widgets/posts.php:13
+msgid "Shamrock Posts"
+msgstr ""
+
+#: ../include/widgets/posts.php:16
+msgid "Featured Posts"
+msgstr ""
+
+#: ../include/widgets/posts.php:139 ../include/widgets/video.php:80
+msgid "Title"
+msgstr ""
+
+#: ../include/widgets/posts.php:144
+msgid "Number of posts to show"
+msgstr ""
+
+#: ../include/widgets/posts.php:154
+msgid "Auto detect category"
+msgstr ""
+
+#: ../include/widgets/posts.php:155
+msgid ""
+"If sidebar is used on single post template, display posts from current post "
+"category "
+msgstr ""
+
+#: ../include/widgets/posts.php:163
+msgid "Only select posts which are not older than"
+msgstr ""
+
+#: ../include/widgets/posts.php:173
+msgid "Choose manually"
+msgstr ""
+
+#: ../include/widgets/posts.php:175
+msgid ""
+"Specify post ids separated by comma if you want to select only those posts. "
+"i.e. 213,32,12,45 Note: you can also choose pages as well as custom post "
+"types"
+msgstr ""
+
+#: ../include/widgets/posts.php:189
+msgid "1 Day"
+msgstr ""
+
+#: ../include/widgets/posts.php:190
+msgid "1 Week"
+msgstr ""
+
+#: ../include/widgets/posts.php:191
+msgid "1 Month"
+msgstr ""
+
+#: ../include/widgets/posts.php:192
+msgid "3 Months"
+msgstr ""
+
+#: ../include/widgets/posts.php:193
+msgid "6 Months"
+msgstr ""
+
+#: ../include/widgets/posts.php:194
+msgid "1 Year"
+msgstr ""
+
+#: ../include/widgets/posts.php:195
+msgid "Select all posts"
+msgstr ""
+
+#: ../include/widgets/posts.php:203
+msgid "Published date"
+msgstr ""
+
+#: ../include/widgets/posts.php:204
+msgid "Number of comments"
+msgstr ""
+
+#: ../include/widgets/posts.php:205
+msgid "Random"
+msgstr ""
+
+#: ../include/widgets/posts.php:208
+msgid "Order by:"
+msgstr ""
+
+#: ../include/widgets/posts.php:221
+msgid "Choose from:"
+msgstr ""
+
+#: ../include/widgets/posts.php:232
+msgid "None"
+msgstr ""
+
+#: ../include/widgets/posts.php:233
+msgid "Date/time"
+msgstr ""
+
+#: ../include/widgets/posts.php:240
+msgid "Display meta data:"
+msgstr ""
+
+#: ../include/widgets/video.php:11
+msgid "You can easily place YouTube or Vimeo video here"
+msgstr ""
+
+#: ../include/widgets/video.php:13
+msgid "Shamrock Video"
+msgstr ""
+
+#: ../include/widgets/video.php:16
+msgid "Video"
+msgstr ""
+
+#: ../include/widgets/video.php:85
+msgid "Video type"
+msgstr ""
+
+#: ../include/widgets/video.php:87
+msgid "YouTube"
+msgstr ""
+
+#: ../include/widgets/video.php:89
+msgid "Vimeo"
+msgstr ""
+
+#: ../include/widgets/video.php:93
+msgid "Video ID"
+msgstr ""
+
+#: ../include/widgets/video.php:95
+msgid "ID example"
+msgstr ""
+
+#: ../include/widgets/video.php:99
+msgid "Height"
+msgstr ""
+
+#: ../include/widgets/video.php:104
+msgid "Description (optional)"
+msgstr ""
+
+#: ../sections/archive-title.php:5
+msgid "Category - "
+msgstr ""
+
+#: ../sections/archive-title.php:12
+msgid "Author - "
+msgstr ""
+
+#: ../sections/archive-title.php:18
+msgid "Search Results For - "
+msgstr ""
+
+#: ../sections/archive-title.php:20
+msgid "Tag - "
+msgstr ""
+
+#: ../sections/archive-title.php:26 ../sections/archive-title.php:28
+#: ../sections/archive-title.php:30
+msgid "Archive - "
+msgstr ""
+
+#: ../sections/author-box.php:3
+msgid "About the author"
+msgstr ""
+
+#: ../sections/author-box.php:11
+msgid "View all posts"
+msgstr ""
+
+#: ../sections/content-none.php:4
+msgid "Nothing found"
+msgstr ""
+
+#: ../sections/content-none.php:12
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../sections/content-none.php:17
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../sections/content.php:40 ../sections/content.php:43
+msgid "Continue reading"
+msgstr ""
+
+#: ../sections/pagelinks-nav.php:4
+#, php-format
+msgid "Page %s of %s"
+msgstr ""
+
+#: ../sections/pagelinks-nav.php:7 ../sections/pagelinks-nav.php:11
+#: ../sections/pagination-numeric.php:1
+msgid "Previous"
+msgstr ""
+
+#: ../sections/pagelinks-nav.php:10 ../sections/pagelinks-nav.php:15
+#: ../sections/pagination-numeric.php:1
+msgid "Next"
+msgstr ""
+
+#: ../sections/pagination-classic.php:3
+msgid "Newer Entries"
+msgstr ""
+
+#: ../sections/pagination-classic.php:6
+msgid "Older Entries"
+msgstr ""

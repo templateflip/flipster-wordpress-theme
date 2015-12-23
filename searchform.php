@@ -1,0 +1,4 @@
+<form class="smr-search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+	<input name="s" class="smr-search-input" size="20" type="text" value="<?php echo esc_attr(__('Type here to search...', 'shamrock')); ?>" onfocus="(this.value == '<?php echo esc_attr(__('Type here to search...', 'shamrock')); ?>') && (this.value = '')" onblur="(this.value == '') && (this.value = '<?php echo esc_attr(__('Type here to search...', 'shamrock')); ?>')" placeholder="<?php echo esc_attr(__('Type here to search...', 'shamrock')); ?>" />
+	<button type="submit" class="smr-search-submit"><i class="fa fa-search"></i></button> 
+</form>

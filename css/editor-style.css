@@ -1,0 +1,441 @@
+/*
+Theme Name: Twenty Fifteen
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ * 7.0 - Audio / Video
+ * 8.0 - RTL
+ */
+
+/**
+ * 1.0 Body
+ */
+
+body {
+    font-family: "PT Serif", serif;
+    background: #ffffff;
+    color: #333333;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+	margin:38px 80px 0;
+	max-width: 622px;
+}
+
+
+/**
+ * 2.0 Typography
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 44px;
+}
+h3{
+  font-size: 36px;
+}
+h4 {
+  font-size: 33px;
+}
+h5 {
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
+}
+h1, h2, h3 {
+    margin-bottom: 12.5px;
+}
+p {
+  margin: 0 0 30px 0;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+address {
+	font-style: italic;
+	margin: 0 0 28px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: Inconsolata, monospace;
+}
+
+pre {
+	background-color: #fcfcfc;
+	border: 1px solid #eaeaea;
+	font-size: 17px;
+	line-height: 1.2353;
+	margin-bottom: 28px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 14px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted #eaeaea;
+	cursor: help;
+}
+
+mark,
+ins {
+	background-color: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/**
+ * 3.0 Elements
+ */
+
+hr {
+	background-color: rgba(153,153,153,0.3);
+	border: 0;
+	height: 1px;
+	margin-bottom: 28px;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 12.5px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 12.5px;
+}
+
+dl {
+	margin: 0 0 12.5px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 12.5px;
+}
+
+table,
+th,
+td,
+.mce-item-table,
+.mce-item-table th,
+.mce-item-table td {
+	border: 1px solid #eaeaea;
+}
+
+table a {
+	color: #333;
+}
+
+table,
+.mce-item-table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 28px;
+	width: 100%;
+}
+
+table th,
+.mce-item-table th,
+table caption {
+	border-width: 0 1px 1px 0;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 10px 15px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+table td,
+.mce-item-table td {
+	border-width: 0 1px 1px 0;
+	font-size: 17px;
+	padding: 7px;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+img {
+	border: 0;
+	height: auto;
+	max-width: 660px;
+	vertical-align: middle;
+}
+
+a img {
+	display: block;
+}
+
+figure {
+	margin: 0;
+}
+
+del {
+	opacity: 0.8;
+}
+
+a {
+	border-bottom: 1px solid #333;
+	color: #333;
+	text-decoration: none;
+}
+fieldset {
+	border:none;
+}
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 27px;
+    line-height: inherit;
+    color: #666;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea{
+ 	border-radius: 4px;
+ 	outline: none;
+ 	padding: 1px 10px;
+ 	width: 100%;
+ 	border: 1px solid rgba(153,153,153,0.7);
+ 	height: 34px;
+}
+textarea{
+	height: 150px;
+}
+input[type="radio"], input[type="checkbox"]{
+	display: inline-block;
+}
+select{outline: none;}
+
+
+/**
+ * 4.0 Alignment
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 30px 30px 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 30px 30px;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+ * 5.0 Caption
+ */
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0;
+	font-size: 80%;
+}
+.wp-caption-text {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px 11px 9px;
+    font-size: 14px;
+    line-height: 20px;
+    z-index: 600;
+    max-width: 30%;
+    text-align: left;
+    min-width: 140px;
+}
+
+/**
+ * 6.0 Galleries
+ */
+
+.gallery-item,
+.gallery-item a {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+}.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+
+/**
+ * 7.0 Audio / Video
+ */
+
+.mce-content-body .wpview-wrap {
+	margin-bottom: 32px;
+}
+
+.mce-content-body .wp-audio-playlist {
+	margin: 0;
+}
+
+
+/**
+ * 8.0 RTL
+ */
