@@ -141,7 +141,6 @@ require_once 'include/options.php';
 require_once 'include/snippets.php';
 
 /* Include plugins (required or recommended for this theme) */
-require_once 'include/plugins.php';
-
+//require_once 'include/plugins.php';
 
 ?>

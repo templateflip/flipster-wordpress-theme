@@ -832,7 +832,7 @@ a:active {
   margin-bottom: 30px;
 }
 .smr-nofimg .has-post-thumbnail .entry-header-wrapper {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 .format-video .entry-header-wrapper,
 .format-audio .entry-header-wrapper,
