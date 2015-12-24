@@ -444,3 +444,39 @@ select{outline: none;}
 /**
  * 8.0 RTL
  */
+
+
+/**
+ * Buttons
+ */
+a.btn {
+ display: inline-block;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #F7C24E;
+	line-height: 18px;
+	margin: 0 10px 10px 0;
+ padding: 1em 1.5em;
+ border-radius: 10px;
+	position: relative;
+	color: #FFF !important;
+ border: none !important;
+	transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+}
+
+a.btn-blue {
+ background: #2C9CB1;
+}
+
+a.btn-green {
+ background: #91C842;
+}
+
+a.btn-red {
+ background: #e23a3e;
+}

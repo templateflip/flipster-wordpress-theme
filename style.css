@@ -232,6 +232,7 @@ a:hover,
 a:active {
   outline: 0;
 }
+
 /*--------------------------------------------------------------
 	4.0 Header
 --------------------------------------------------------------*/
@@ -1958,6 +1959,58 @@ legend {
 .clear {
   clear: both;
 }
+
+.entry-content a.btn, a.download-button {
+  display: inline-block;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #F7C24E;
+	line-height: 18px;
+	margin: 0 10px 10px 0;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+	position: relative;
+	color: #FFF !important;
+  border: none !important;
+	transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+}
+
+.entry-content a.btn-blue {
+  background: #2C9CB1;
+}
+
+.entry-content a.btn-green {
+  background: #91C842;
+}
+
+.entry-content a.btn-red {
+  background: #e23a3e;
+}
+
+a.download-button {
+  display: block;
+  background: #2C9CB1 !important;
+  line-height: 1.5em;
+	padding: .5em 1em;
+}
+
+a.download-button small {
+	text-transform: none;
+	font-weight: normal;
+}
+
+.entry-content a.btn:hover, a.download-button:hover {
+	text-decoration: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	filter: alpha(opacity=90);
+	opacity: .9;
+}
+
 /*--------------------------------------------------------------
 	16.0 Plugins CSS
 --------------------------------------------------------------*/
