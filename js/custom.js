@@ -2,6 +2,9 @@
 
 $(document).ready(function() {
 
+  /* Remove underlines from images with link */
+  $('a img').parent('a').addClass('image_link');
+  
 	/* Apply owl carousel to 1-column gallery */
 	/*$('.gallery-columns-1').owlCarousel({
         loop: true,
