@@ -273,6 +273,11 @@ a {
 	color: #333;
 	text-decoration: none;
 }
+
+a:hover {
+  color: #d34836;;
+}
+
 fieldset {
 	border:none;
 }

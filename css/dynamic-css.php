@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $color_body_bg = esc_attr(shamrock_get_option('color_body_bg'));
 $color_txt = esc_attr(shamrock_get_option('color_txt'));
@@ -20,17 +20,6 @@ a{
     border-top: 1px solid <?php echo shamrock_hex2rgba($color_meta, 0.3); ?>;
     border-bottom: 1px solid <?php echo shamrock_hex2rgba($color_meta, 0.3); ?>;
 }
-.entry-content a:not(.more-link){
-	color: <?php echo $color_txt; ?>;
-	background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, <?php echo $color_body_bg; ?>), color-stop(50%, <?php echo $color_acc; ?>));
-	background: -moz-linear-gradient(bottom, <?php echo $color_body_bg; ?> 50%, <?php echo $color_acc; ?> 50%);
-	background: -webkit-linear-gradient(bottom, <?php echo $color_body_bg; ?> 50%, <?php echo $color_acc; ?> 50%);
-	background: linear-gradient(to top, <?php echo $color_body_bg; ?> 50%, <?php echo $color_acc; ?> 50%);	
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
-	background-position: 0 100%;
-	text-shadow: 2px 0 <?php echo $color_body_bg; ?>, 0px 2px <?php echo $color_body_bg; ?>, -2px 0 <?php echo $color_body_bg; ?>, 0 -2px <?php echo $color_body_bg; ?>;
-}
 body,
 .site-header .site-title a,
 .smr-nofimg .smr-post.has-post-thumbnail .entry-title a,
@@ -42,8 +31,8 @@ body,
 .sidebar .smr-search-form .smr-search-submit{
 	color: <?php echo $color_txt; ?>;
 }
-.has-post-thumbnail .entry-meta .meta-item, 
-.has-post-thumbnail .entry-meta span, 
+.has-post-thumbnail .entry-meta .meta-item,
+.has-post-thumbnail .entry-meta span,
 .has-post-thumbnail .entry-meta a{
 	color: rgba(255,255,255,0.7);
 }
@@ -76,7 +65,7 @@ body,
 .entry-footer .meta-tags a:hover,
 .smr-prev-next a:hover,
 .site-footer a:hover{
-	color: <?php echo $color_acc; ?>;	
+	color: <?php echo $color_acc; ?>;
 }
 .sidebar .tagcloud a:hover,
 .entry-footer .meta-tags a:hover,
@@ -136,8 +125,8 @@ h6,
 .entry-meta .meta-item, .entry-meta span, .entry-meta a,
 .comment-metadata a,
 .entry-footer .meta-tags a,
-.smr-nofimg .has-post-thumbnail .entry-meta .meta-item, 
-.smr-nofimg .has-post-thumbnail .entry-meta span, 
+.smr-nofimg .has-post-thumbnail .entry-meta .meta-item,
+.smr-nofimg .has-post-thumbnail .entry-meta span,
 .smr-nofimg .has-post-thumbnail .entry-meta a,
 .smr-post.format-video .entry-header .entry-meta *,
 .smr-post.format-audio .entry-header .entry-meta *,
@@ -159,7 +148,7 @@ input[type="password"],
 textarea,
 select,
 .widget select{
-	border: 1px solid <?php echo shamrock_hex2rgba($color_meta, 0.7); ?>	
+	border: 1px solid <?php echo shamrock_hex2rgba($color_meta, 0.7); ?>
 }
 .entry-footer .meta-tags a,
 blockquote,
@@ -169,8 +158,8 @@ blockquote,
 
 .comment-form .form-submit .submit,
 .mks_autor_link_wrap a,
-button, html input[type="button"], 
-input[type="reset"], 
+button, html input[type="button"],
+input[type="reset"],
 input[type="submit"]{
 	border: 1px solid <?php echo shamrock_hex2rgba($color_acc, 0.7); ?>;
 	color: <?php echo $color_acc; ?>;
@@ -181,12 +170,12 @@ hr{
 .error404 .entry-content .smr-search-form .smr-search-submit,
 .not-found .smr-search-form .smr-search-submit{
 	color: <?php echo $color_txt; ?>;
-	background: transparent;	
+	background: transparent;
 }
 .comment-form .form-submit .submit:hover,
 button:hover,
-html input[type="button"]:hover, 
-input[type="reset"]:hover, 
+html input[type="button"]:hover,
+input[type="reset"]:hover,
 input[type="submit"]:hover{
 	color: #FFF;
 	background: <?php echo $color_acc; ?>;
@@ -195,14 +184,14 @@ input[type="submit"]:hover{
 	color: <?php echo $color_body_bg; ?>;
 }
 .mobile-nav{
-	background: <?php echo $color_acc; ?>;	
+	background: <?php echo $color_acc; ?>;
 }
 
 
 
 @media (max-width: 620px){
 .smr-post.has-post-thumbnail .entry-header .entry-title, .smr-post.has-post-thumbnail .entry-header .entry-title a{
-	color: <?php echo $color_h; ?>;	
+	color: <?php echo $color_h; ?>;
 }
 .has-post-thumbnail .entry-meta .meta-item, .has-post-thumbnail .entry-meta span, .has-post-thumbnail .entry-meta a{
 	color: <?php echo $color_meta; ?>;

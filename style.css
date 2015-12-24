@@ -920,18 +920,11 @@ a:active {
   margin-bottom: 0;
 }
 .entry-content a:not(.more-link) {
-  color: #333333;
-  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(50%, #ffffff), color-stop(50%, #ff5050));
-  background: -moz-linear-gradient(bottom, #ffffff 50%, #ff5050 50%);
-  background: -webkit-linear-gradient(bottom, #ffffff 50%, #ff5050 50%);
-  background: linear-gradient(to top, #ffffff 50%, #ff5050 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 100%;
-  text-shadow: 2px 0 #ffffff, 0px 2px #ffffff, -2px 0 #ffffff, 0 -2px #ffffff;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
 .entry-content a:hover {
-  color: #ff5050;
+  color: #d34836;
 }
 .entry-content div > a {
   background: transparent !important;
