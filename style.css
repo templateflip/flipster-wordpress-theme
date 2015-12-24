@@ -4,7 +4,7 @@ Theme URI: http://themes.kanishkkunal.in/flipster
 Author: Kanishk Kunal
 Author URI: http://kanishkkunal.in
 Description: Flipster is a clean WordPress theme with modern typography and focus on content. Its responsive design will ensure it looks good an all devices. It's highly flexible so you can use powerful yet simple options in the customizer to style it depending on your taste.
-Version: 1.0.7
+Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, fluid-layout, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, translation-ready, custom-colors, custom-menu, threaded-comments, theme-options
@@ -2001,6 +2001,8 @@ a.download-button {
   background: #2C9CB1 !important;
   line-height: 1.5em;
 	padding: .5em 1em;
+  text-shadow: none !important;
+  box-shadow: none !important;
 }
 
 a.download-button small {

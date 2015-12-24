@@ -1,11 +1,11 @@
 </div>
 </div>
-	
+
 <footer id="footer" class="site-footer" role="contentinfo">
 	<div class="container">
 		<div class="col-lg-12">
 			<div class="site-info">
-				<?php printf( esc_html__( 'Copyright &copy; %s. Created by %s. Powered by %s.', 'shamrock' ), date('Y', time()),  '<a href="http://mekshq.com" target="_blank">Meks</a>' , '<a href="http://wordpress.org" target="_blank">WordPress</a>' ); ?>
+				<?php printf( esc_html__( 'Copyright &copy; %s. Powered by %s & theme %s.', 'shamrock' ), date('Y', time()),  '<a href="http://wordpress.org" target="_blank">WordPress</a>', '<a href="http://themes.kanishkkunal.in/flipster" target="_blank">Flipster</a>'  ); ?>
 			</div>
 
 			<?php if ( has_nav_menu( 'shamrock_footer_menu' ) ) : ?>
@@ -17,7 +17,7 @@
 
 <div class="mobile-nav">
     <?php wp_nav_menu(array('theme_location' => 'shamrock_main_nav', 'menu_class' => 'smr-res-nav', 'container' => false )); ?>
-	
+
 	<?php if ( shamrock_get_option( 'nav_social' ) ) : ?>
 		<div id="smr-res-social-wrap" class="smr-res-social-wrap">
 			<?php if ( has_nav_menu( 'shamrock_social_menu' ) ) : ?>

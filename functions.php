@@ -3,8 +3,8 @@
 /*	Define Theme Vars */
 define( 'THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'THEME_URI', trailingslashit( get_template_directory_uri() ) );
-define( 'THEME_NAME', 'Shamrock' );
-define( 'THEME_VERSION', '1.0.7' );
+define( 'THEME_NAME', 'Flipster' );
+define( 'THEME_VERSION', '0.1' );
 define( 'JS_URI', trailingslashit( THEME_URI . 'js' ) );
 define( 'CSS_URI', trailingslashit( THEME_URI . 'css' ) );
 define( 'IMG_DIR', trailingslashit( THEME_DIR . 'images' ) );
