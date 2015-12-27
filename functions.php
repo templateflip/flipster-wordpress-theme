@@ -21,14 +21,15 @@ function flipster_enqueue_uikit_assets() {
 
 }
 
+//Setup Theme
+beans_add_smart_action( 'init', 'flipster_init' );
 
-// Remove page post type comment support
-beans_add_smart_action( 'init', 'flipster_post_type_support' );
+function flipster_init() {
 
-function flipster_post_type_support() {
-
+	// Remove page post type comment support
 	remove_post_type_support( 'page', 'comments' );
-
+	// Register additional menus, we already have a Primary menu registered
+	register_nav_menu('footer-menu', __( 'Footer Menu', 'flipster'));
 }
 
 
@@ -158,6 +159,19 @@ function flipster_widget_tags_cloud( $output ) {
 
 }
 
+
+// Add the footer menu
+beans_add_smart_action( 'beans_footer_prepend_markup', 'flipster_footer_menu' );
+
+function flipster_footer_menu() {
+
+	wp_nav_menu( array( 'theme_location' => 'footer-menu',
+											'container' => 'nav',
+	 										'container_class' => 'tm-footer-menu uk-navbar uk-margin-bottom',
+											'menu_class' => 'uk-navbar-nav uk-text-small'
+										));
+
+}
 
 // Add footer content (filter)
 beans_add_smart_action( 'beans_footer_credit_right_text_output', 'flipster_footer' );
