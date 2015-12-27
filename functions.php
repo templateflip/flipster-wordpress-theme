@@ -38,7 +38,11 @@ beans_add_smart_action( 'wp', 'flipster_setup_document' );
 function flipster_setup_document() {
 
 	// Header
-	beans_add_attribute( 'beans_site_branding', 'class', 'uk-margin-small-top' );
+	beans_remove_attribute( 'beans_site_branding', 'class', 'uk-float-left' );
+	//beans_add_attribute( 'beans_site_branding', 'class', 'uk-float-left' );
+	//Primary menu
+	beans_remove_attribute( 'beans_primary_menu', 'class', 'uk-float-right' );
+	beans_add_attribute( 'beans_primary_menu', 'class', 'uk-navbar-center' );
 
 	// Breadcrumb
 	//beans_remove_action( 'beans_breadcrumb' );
