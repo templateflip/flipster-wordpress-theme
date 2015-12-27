@@ -61,9 +61,6 @@ function flipster_setup_document() {
 	// Post embed
 	beans_add_attribute( 'beans_embed_oembed', 'class', 'tm-cover-article' );
 
-	// Comment meta
-	beans_modify_action_priority( 'beans_comment_metadata', 9 );
-
 	// Comment form
 	beans_add_attribute( 'beans_comment_form_wrap', 'class', 'tm-cover-article' );
 	beans_add_attribute( 'beans_comment_fields_inner_wrap', 'class', 'uk-grid-small' );
@@ -77,7 +74,7 @@ function flipster_setup_document() {
  		//remove featured image
  		beans_remove_action( 'beans_post_image' );
  		// Post title
- 		beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-small-bottom' );
+ 		beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-bottom' );
  		// Post author profile
  		add_action( 'beans_comments_before_markup', 'flipster_author_profile' );
  		// Post comments
