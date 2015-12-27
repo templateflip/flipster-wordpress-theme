@@ -19,12 +19,16 @@ function flipster_index_setup_document() {
 	beans_remove_attribute( 'beans_post', 'class', 'uk-article' );
 
 	// Post meta
+	beans_remove_action( 'beans_post_meta_tags' );
 
 	// Post image
 	beans_modify_action( 'beans_post_image', 'beans_post_header_before_markup', 'beans_post_image' );
 
 	// Post title
-	beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-small-top uk-h3' );
+	beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-small-top uk-h2' );
+
+	// Remove the post content.
+	beans_remove_action( 'beans_post_content' );
 
 	// Post more link
 	beans_add_attribute( 'beans_post_more_link', 'class', 'uk-button uk-button-primary uk-button-small' );
@@ -33,16 +37,6 @@ function flipster_index_setup_document() {
 	beans_modify_action_hook( 'beans_posts_pagination', 'beans_content_after_markup' );
 
 }
-
-// Content styling
-beans_add_smart_action( 'the_content', 'flipster_index_content' );
-function flipster_index_content( $content ) {
-    $output = beans_open_markup( 'flipster_index_content', 'p' );
-    	$output .= beans_output( 'flipster_index_post_content', substr( strip_tags( $content ), 0, 150 ) . ' ...' );
-   	$output .= beans_close_markup( 'flipster_index_content', 'p' );
-   	return $output;
-}
-
 
 // Resize post image (filter)
 beans_add_smart_action( 'beans_edit_post_image_args', 'flipster_index_post_image_args' );

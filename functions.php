@@ -51,15 +51,12 @@ function flipster_setup_document() {
 	// Post content
 	beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
 
-	// Post image
-	beans_add_attribute( 'beans_post_image', 'class', 'tm-cover-article' );
-
 	// Post meta
 	beans_remove_attribute( 'beans_post_meta', 'class', 'uk-subnav-line' );
-	beans_remove_action( 'beans_post_meta_tags' );
 	beans_remove_action( 'beans_post_meta_categories' );
 	beans_remove_output( 'beans_post_meta_categories_prefix' );
 	beans_remove_output( 'beans_post_meta_date_prefix' );
+	beans_add_attribute( 'beans_post_meta_date', 'class', 'uk-text-muted' );
 
 	// Post embed
 	beans_add_attribute( 'beans_embed_oembed', 'class', 'tm-cover-article' );
