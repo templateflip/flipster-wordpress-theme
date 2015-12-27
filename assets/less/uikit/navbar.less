@@ -1,0 +1,31 @@
+// Variables modifiers
+// ========================================================================
+
+@navbar-nav-padding-horizontal:                 20px;
+@navbar-nav-color:                              @base-link-color;
+@navbar-nav-font-weight:                        300;
+@navbar-nav-hover-background:                   transparent;
+@navbar-nav-hover-color:                        @base-body-color;
+@navbar-nav-onclick-background:                 transparent;
+@navbar-nav-onclick-color:                      @base-body-color;
+@navbar-nav-active-background:                  transparent;
+@navbar-nav-active-color:                       @base-body-color;
+
+@navbar-nav-font-size:                          12px;
+
+
+/* Navbar modifiers
+ ========================================================================== */
+
+.hook-navbar-nav() {
+    text-transform: uppercase;
+    border-radius: @global-border-radius;
+}
+
+/* Add dropdown icon */
+.uk-navbar-nav > li[data-uk-dropdown] > a i {
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 27px;
+}

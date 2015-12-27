@@ -1,0 +1,29 @@
+// Variables modifiers
+// ========================================================================
+
+@article-title-font-size:                       40px;
+@article-title-line-height:                     50px;
+@article-title-font-weight:                     300;
+
+@article-lead-font-size:                        20px;
+@article-lead-line-height:                      31px;
+@article-lead-font-weight:                      300;
+
+/* Article modifiers
+ ========================================================================== */
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .uk-article + .uk-article { margin-top: 35px; }
+
+}
+
+/* Phone landscape and smaller */
+@media (max-width: @breakpoint-mini-max) {
+
+    .uk-article-meta.uk-subnav > li {
+    	width: 100%;
+    }
+
+}
