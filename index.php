@@ -7,7 +7,7 @@ function flipster_index_setup_document() {
 	// Posts grid
 	beans_add_attribute( 'beans_content', 'class', 'tm-posts-grid uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-2' );
 	beans_add_attribute( 'beans_content', 'data-uk-grid-margin', '' );
-	//beans_add_attribute( 'beans_content', 'data-uk-grid-match', "{target:'.uk-panel'}" );
+	beans_add_attribute( 'beans_content', 'data-uk-grid-match', "{target:'.uk-panel'}" );
 	beans_wrap_inner_markup( 'beans_post', 'flipster_post_panel', 'div', array(
 	  'class' => 'uk-panel uk-panel-box'
 	) );

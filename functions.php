@@ -52,7 +52,6 @@ function flipster_setup_document() {
 	beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
 
 	// Post meta
-	beans_remove_attribute( 'beans_post_meta', 'class', 'uk-subnav-line' );
 	beans_remove_action( 'beans_post_meta_categories' );
 	beans_remove_output( 'beans_post_meta_categories_prefix' );
 	beans_remove_output( 'beans_post_meta_date_prefix' );
@@ -77,8 +76,6 @@ function flipster_setup_document() {
  		beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-bottom' );
  		// Post author profile
  		add_action( 'beans_comments_before_markup', 'flipster_author_profile' );
- 		// Post comments
- 		beans_add_attribute( 'beans_no_comment', 'class', 'tm-no-comments uk-text-center uk-text-large' );
  	}
 
 	// Search
@@ -113,7 +110,6 @@ function flipster_layout_grid_settings( $layouts ) {
 
 }
 
-
 // Modify beans post meta items (filter)
 beans_add_smart_action( 'beans_post_meta_items', 'flipster_post_meta_items' );
 
@@ -121,6 +117,7 @@ function flipster_post_meta_items( $items ) {
 
 	// Remove author meta
 	unset( $items['author'] );
+	unset( $items['comments']);
 
 	// Add categories meta
 	$items['categories'] = 20;
@@ -128,39 +125,6 @@ function flipster_post_meta_items( $items ) {
 	return $items;
 
 }
-
-// Add post meta item date icon
-beans_add_smart_action( 'beans_post_meta_item_date_prepend_markup', 'flipster_post_meta_item_date_icon' );
-
-function flipster_post_meta_item_date_icon() {
-
-	echo beans_open_markup( 'flipster_post_meta_item_date_icon', 'i', 'class=uk-icon-clock-o uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'flipster_post_meta_item_date_icon', 'i' );
-
-}
-
-
-// Add post meta item author icon
-beans_add_smart_action( 'beans_post_meta_item_categories_prepend_markup', 'flipster_post_meta_item_categories_icon' );
-
-function flipster_post_meta_item_categories_icon() {
-
-	echo beans_open_markup( 'flipster_post_meta_item_categories_icon', 'i', 'class=uk-icon-archive uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'flipster_post_meta_item_categories_icon', 'i' );
-
-}
-
-
-// Add post meta item comment icon
-beans_add_smart_action( 'beans_post_meta_item_comments_prepend_markup', 'flipster_post_meta_item_comments_icon' );
-
-function flipster_post_meta_item_comments_icon() {
-
-	echo beans_open_markup( 'flipster_post_meta_item_comments_icon', 'i', 'class=uk-icon-comments uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'flipster_post_meta_item_comments_icon', 'i' );
-
-}
-
 
 // Remove comment after note (filter)
 beans_add_smart_action( 'comment_form_defaults', 'flipster_comment_form_defaults' );
