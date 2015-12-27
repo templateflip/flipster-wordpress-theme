@@ -9,12 +9,12 @@ remove_theme_support( 'beans-default-styling' );
 
 
 // Enqueue uikit assets
-beans_add_smart_action( 'beans_uikit_enqueue_scripts', 'jenkins_enqueue_uikit_assets', 5 );
+beans_add_smart_action( 'beans_uikit_enqueue_scripts', 'flipster_enqueue_uikit_assets', 5 );
 
-function jenkins_enqueue_uikit_assets() {
+function flipster_enqueue_uikit_assets() {
 
 	// Enqueue uikit overwrite theme folder
-	beans_uikit_enqueue_theme( 'jenkins', get_stylesheet_directory_uri() . '/assets/less/uikit' );
+	beans_uikit_enqueue_theme( 'flipster', get_stylesheet_directory_uri() . '/assets/less/uikit' );
 
 	// Add the theme style as a uikit fragment to have access to all the variables
 	beans_compiler_add_fragment( 'uikit', get_stylesheet_directory_uri() . '/assets/less/style.less', 'less' );
@@ -23,9 +23,9 @@ function jenkins_enqueue_uikit_assets() {
 
 
 // Remove page post type comment support
-beans_add_smart_action( 'init', 'jenkins_post_type_support' );
+beans_add_smart_action( 'init', 'flipster_post_type_support' );
 
-function jenkins_post_type_support() {
+function flipster_post_type_support() {
 
 	remove_post_type_support( 'page', 'comments' );
 
@@ -33,9 +33,9 @@ function jenkins_post_type_support() {
 
 
 // Setup document fragements, markups and attributes
-beans_add_smart_action( 'wp', 'jenkins_setup_document' );
+beans_add_smart_action( 'wp', 'flipster_setup_document' );
 
-function jenkins_setup_document() {
+function flipster_setup_document() {
 
 	// Header
 	beans_add_attribute( 'beans_site_branding', 'class', 'uk-margin-small-top' );
@@ -81,9 +81,9 @@ function jenkins_setup_document() {
 
 
 // Modify beans layout (filter)
-beans_add_smart_action( 'beans_layout_grid_settings', 'jenkins_layout_grid_settings' );
+beans_add_smart_action( 'beans_layout_grid_settings', 'flipster_layout_grid_settings' );
 
-function jenkins_layout_grid_settings( $layouts ) {
+function flipster_layout_grid_settings( $layouts ) {
 
 	return array_merge( $layouts, array(
 		'grid' => 10,
@@ -95,9 +95,9 @@ function jenkins_layout_grid_settings( $layouts ) {
 
 
 // Modify beans post meta items (filter)
-beans_add_smart_action( 'beans_post_meta_items', 'jenkins_post_meta_items' );
+beans_add_smart_action( 'beans_post_meta_items', 'flipster_post_meta_items' );
 
-function jenkins_post_meta_items( $items ) {
+function flipster_post_meta_items( $items ) {
 
 	// Remove author meta
 	unset( $items['author'] );
@@ -110,42 +110,42 @@ function jenkins_post_meta_items( $items ) {
 }
 
 // Add post meta item date icon
-beans_add_smart_action( 'beans_post_meta_item_date_prepend_markup', 'jenkins_post_meta_item_date_icon' );
+beans_add_smart_action( 'beans_post_meta_item_date_prepend_markup', 'flipster_post_meta_item_date_icon' );
 
-function jenkins_post_meta_item_date_icon() {
+function flipster_post_meta_item_date_icon() {
 
-	echo beans_open_markup( 'jenkins_post_meta_item_date_icon', 'i', 'class=uk-icon-clock-o uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'jenkins_post_meta_item_date_icon', 'i' );
+	echo beans_open_markup( 'flipster_post_meta_item_date_icon', 'i', 'class=uk-icon-clock-o uk-margin-small-right uk-text-muted' );
+	echo beans_close_markup( 'flipster_post_meta_item_date_icon', 'i' );
 
 }
 
 
 // Add post meta item author icon
-beans_add_smart_action( 'beans_post_meta_item_categories_prepend_markup', 'jenkins_post_meta_item_categories_icon' );
+beans_add_smart_action( 'beans_post_meta_item_categories_prepend_markup', 'flipster_post_meta_item_categories_icon' );
 
-function jenkins_post_meta_item_categories_icon() {
+function flipster_post_meta_item_categories_icon() {
 
-	echo beans_open_markup( 'jenkins_post_meta_item_categories_icon', 'i', 'class=uk-icon-archive uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'jenkins_post_meta_item_categories_icon', 'i' );
+	echo beans_open_markup( 'flipster_post_meta_item_categories_icon', 'i', 'class=uk-icon-archive uk-margin-small-right uk-text-muted' );
+	echo beans_close_markup( 'flipster_post_meta_item_categories_icon', 'i' );
 
 }
 
 
 // Add post meta item comment icon
-beans_add_smart_action( 'beans_post_meta_item_comments_prepend_markup', 'jenkins_post_meta_item_comments_icon' );
+beans_add_smart_action( 'beans_post_meta_item_comments_prepend_markup', 'flipster_post_meta_item_comments_icon' );
 
-function jenkins_post_meta_item_comments_icon() {
+function flipster_post_meta_item_comments_icon() {
 
-	echo beans_open_markup( 'jenkins_post_meta_item_comments_icon', 'i', 'class=uk-icon-comments uk-margin-small-right uk-text-muted' );
-	echo beans_close_markup( 'jenkins_post_meta_item_comments_icon', 'i' );
+	echo beans_open_markup( 'flipster_post_meta_item_comments_icon', 'i', 'class=uk-icon-comments uk-margin-small-right uk-text-muted' );
+	echo beans_close_markup( 'flipster_post_meta_item_comments_icon', 'i' );
 
 }
 
 
 // Remove comment after note (filter)
-beans_add_smart_action( 'comment_form_defaults', 'jenkins_comment_form_defaults' );
+beans_add_smart_action( 'comment_form_defaults', 'flipster_comment_form_defaults' );
 
-function jenkins_comment_form_defaults( $args ) {
+function flipster_comment_form_defaults( $args ) {
 
 	$args['comment_notes_after'] = '';
 
@@ -155,9 +155,9 @@ function jenkins_comment_form_defaults( $args ) {
 
 
 // Add avatar uikit circle class (filter)
-beans_add_smart_action( 'get_avatar', 'jenkins_avatar' );
+beans_add_smart_action( 'get_avatar', 'flipster_avatar' );
 
-function jenkins_avatar( $output ) {
+function flipster_avatar( $output ) {
 
 	return str_replace( "class='avatar", "class='avatar uk-border-circle", $output ) ;
 
@@ -165,9 +165,9 @@ function jenkins_avatar( $output ) {
 
 
 // Modify the tags cloud widget
-beans_add_smart_action( 'wp_generate_tag_cloud', 'jenkins_widget_tags_cloud' );
+beans_add_smart_action( 'wp_generate_tag_cloud', 'flipster_widget_tags_cloud' );
 
-function jenkins_widget_tags_cloud( $output ) {
+function flipster_widget_tags_cloud( $output ) {
 
 	return preg_replace( "#style='font-size:.+pt;'#", '', $output );
 
@@ -175,10 +175,10 @@ function jenkins_widget_tags_cloud( $output ) {
 
 
 // Add footer content (filter)
-beans_add_smart_action( 'beans_footer_credit_right_text_output', 'jenkins_footer' );
+beans_add_smart_action( 'beans_footer_credit_right_text_output', 'flipster_footer' );
 
-function jenkins_footer() { ?>
+function flipster_footer() { ?>
 
-  <a href="http://www.themebutler.com/themes/jenkins/" target="_blank" title="Jenkins theme for WordPress">Jenkins</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
+  <a href="http://themes.kanishkkunal.in/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
 <?php }

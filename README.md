@@ -1,2 +1,2 @@
-# tbr-jenkins
-Jenkins is a child-theme for Beans.
+# flipster
+Flipster is a child-theme for Beans.
