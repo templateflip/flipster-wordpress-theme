@@ -86,7 +86,7 @@ function flipster_setup_document() {
 
 // Author profile in posts
 function flipster_author_profile() {
-	echo beans_open_markup( 'flipster_author_profile', 'div',  array( 'class' => 'uk-panel-box' ) );
+	echo beans_open_markup( 'flipster_author_profile', 'div',  array( 'class' => 'uk-panel' ) );
 	echo '<h3 class="uk-panel-title">'.__('About the author', 'flipster').'</h3>';
 	echo '<div class="uk-clearfix">';
 	  echo '<div class="uk-align-left">'.get_avatar( get_the_author_meta('ID'), 96 ).'</div>';
