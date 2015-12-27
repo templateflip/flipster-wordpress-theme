@@ -59,6 +59,7 @@ function flipster_setup_document() {
 	beans_remove_action( 'beans_post_meta_tags' );
 	beans_remove_action( 'beans_post_meta_categories' );
 	beans_remove_output( 'beans_post_meta_categories_prefix' );
+	beans_remove_output( 'beans_post_meta_date_prefix' );
 
 	// Post embed
 	beans_add_attribute( 'beans_embed_oembed', 'class', 'tm-cover-article' );
@@ -74,10 +75,34 @@ function flipster_setup_document() {
 	if ( !is_user_logged_in() )
 		beans_replace_attribute( 'beans_comment_form_comment', 'class', 'uk-width-medium-1-1', 'uk-width-medium-6-10' );
 
+	// Only applies to singular and not pages
+ 	if ( is_singular() && !is_page() ) {
+ 		//remove featured image
+ 		beans_remove_action( 'beans_post_image' );
+ 		// Post title
+ 		beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-small-bottom' );
+ 		// Post author profile
+ 		add_action( 'beans_comments_before_markup', 'flipster_author_profile' );
+ 		// Post comments
+ 		beans_add_attribute( 'beans_no_comment', 'class', 'tm-no-comments uk-text-center uk-text-large' );
+ 	}
+
 	// Search
 	if ( is_search() )
 		beans_remove_action( 'beans_post_image' );
 
+}
+
+// Author profile in posts
+function flipster_author_profile() {
+	echo beans_open_markup( 'flipster_author_profile', 'div',  array( 'class' => 'uk-panel-box' ) );
+	echo '<h3 class="uk-panel-title">'.__('About the author', 'flipster').'</h3>';
+	echo '<div class="uk-clearfix">';
+	  echo '<div class="uk-align-left">'.get_avatar( get_the_author_meta('ID'), 96 ).'</div>';
+   	echo '<div class="uk-text-large uk-text-bold">'.get_the_author_meta('display_name').'</div>';
+		echo wpautop(get_the_author_meta('description'));
+	echo '</div>';
+	echo beans_close_markup( 'flipster_author_profile', 'div' );
 }
 
 
