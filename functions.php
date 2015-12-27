@@ -42,7 +42,7 @@ function flipster_setup_document() {
 	beans_remove_attribute( 'beans_primary_menu', 'class', 'uk-float-right' );
 
 	// Breadcrumb
-	//beans_remove_action( 'beans_breadcrumb' );
+	beans_remove_action( 'beans_breadcrumb' );
 
 	// Navigation
 	beans_add_attribute( 'beans_sub_menu_wrap', 'class', 'uk-dropdown-center' );
