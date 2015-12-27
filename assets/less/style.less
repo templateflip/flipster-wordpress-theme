@@ -11,22 +11,41 @@
 	border-bottom: 1px solid #EDEDED;
 }
 
-/* Phone landscape and bigger */
-@media (min-width: @breakpoint-medium) {
-	.tm-header {
-	    padding-top: 30px;
-	    padding-bottom: 30px;
-	}
-}
-
 .tm-site-branding, .tm-site-branding a {
 	text-align: center;
 	line-height: 1.2;
 }
 
-.tm-site-branding a {
-	font-size: 42px;
-	font-weight: 700;
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+	.tm-header {
+	    padding-top: 30px;
+	    padding-bottom: 10px;
+	}
+	.tm-site-title-tag {
+		font-size: 14px;
+		margin-top: 6px;
+	}
+
+	.tm-site-branding a {
+		font-size: 48px;
+		font-weight: 700;
+	}
+}
+
+/* Navbar */
+.tm-primary-menu {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.tm-primary-menu .uk-navbar-nav {
+	display: inline-block;
+	float: none;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Main
