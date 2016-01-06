@@ -4,6 +4,9 @@
 require_once( get_template_directory() . '/lib/init.php' );
 
 
+/* Helpers and utility functions */
+require_once 'include/helpers.php';
+
 // Remove Beans Default Styling
 remove_theme_support( 'beans-default-styling' );
 
