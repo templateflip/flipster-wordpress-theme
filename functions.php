@@ -45,6 +45,14 @@ function flipster_setup_document() {
 	beans_remove_attribute( 'beans_site_branding', 'class', 'uk-float-left' );
 	beans_remove_attribute( 'beans_primary_menu', 'class', 'uk-float-right' );
 
+	// Layout
+	if(beans_get_layout( ) != 'c') {
+		beans_remove_attribute( 'beans_primary', 'class', 'uk-width-medium-7-10' );
+		beans_add_attribute( 'beans_primary', 'class', 'uk-width-large-7-10' );
+		beans_remove_attribute( 'beans_sidebar_primary', 'class', 'uk-width-medium-3-10' );
+		beans_add_attribute( 'beans_sidebar_primary', 'class', 'uk-width-large-3-10 uk-visible-large' );
+ }
+
 	// Breadcrumb
 	if(!is_archive())
 		beans_remove_action( 'beans_breadcrumb' );
