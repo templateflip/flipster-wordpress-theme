@@ -87,6 +87,8 @@ function flipster_setup_document() {
  		beans_remove_action( 'beans_post_image' );
  		// Post title
  		beans_add_attribute( 'beans_post_title', 'class', 'uk-margin-bottom' );
+		//Widget area after post content
+		beans_add_smart_action( 'the_content', 'flipster_widget_after_post_content' );
  		// Post author profile
  		add_action( 'beans_comments_before_markup', 'flipster_author_profile' );
  	}
@@ -227,14 +229,13 @@ function flipster_below_post_widget_area() {
     ) );
 }
 
-beans_add_smart_action('beans_post_navigation_before_markup', 'flipster_below_post_widget_output');
 //Display the Widget area
-function flipster_below_post_widget_output() {
-	?>
-	<div class="tm-below-post-widget-area">
-			<?php echo beans_widget_area( 'below-post' ); ?>
-	</div>
-	<?php
+function flipster_widget_after_post_content( $content ) {
+	$output =  $content;
+	$output .=  '<div class="tm-below-post-widget-area">';
+	$output .=   beans_widget_area( 'below-post' );
+	$output .=  '</div>';
+	return $output;
 }
 
 // Add the footer menu
