@@ -53,6 +53,7 @@
 
 .tm-main {
 	background: #FAFAFA;
+	padding-top: 0;
 }
 
 
@@ -137,6 +138,31 @@ body:not(.single) .uk-article,
 	height: 196px;
 }
 
+/* Widget areas */
+.tm-below-header-widget-area, .tm-below-blogroll-widget-area {
+	text-align: center;
+	padding: 10px;
+
+	.textwidget {
+		max-width: 728px;
+		max-height: 90px;
+		margin: 0 auto;
+	}
+}
+
+.tm-below-blogroll-widget-area {
+	padding: 0;
+	margin-top: 25px;
+}
+
+.tm-below-post-widget-area {
+	text-align: center;
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 10px auto 0;
+	border-bottom: 1px solid @global-border;
+}
+
 
 /* Widgets
  ========================================================================== */
@@ -216,4 +242,17 @@ body:not(.single) .uk-article,
 
 .tm-footer-menu .uk-navbar-nav li a {
 	text-transform: none;
+}
+
+/* Additional Styles */
+.well {
+    background-color: #eee;
+    padding: 30px;
+		color: #444;
+		margin-bottom: @base-margin-vertical;
+}
+
+ins {
+	background: transparent;
+	background: rgba(0,0,0,0.05);
 }

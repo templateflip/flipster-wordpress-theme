@@ -159,6 +159,72 @@ function flipster_widget_tags_cloud( $output ) {
 
 }
 
+/* Widget areas */
+// Register a widget area below header.
+add_action( 'widgets_init', 'flipster_below_header_widget_area' );
+
+function flipster_below_header_widget_area() {
+
+    beans_register_widget_area( array(
+        'name' => 'Below Header',
+        'id' => 'below-header',
+        'beans_type' => 'stack'
+    ) );
+}
+
+beans_add_smart_action('beans_main_prepend_markup', 'flipster_below_header_widget_output');
+//Display the Widget area
+function flipster_below_header_widget_output() {
+	?>
+	<div class="tm-below-header-widget-area">
+			<?php echo beans_widget_area( 'below-header' ); ?>
+	</div>
+	<?php
+}
+
+// Register a widget area below blogroll.
+add_action( 'widgets_init', 'flipster_below_blogroll_widget_area' );
+
+function flipster_below_blogroll_widget_area() {
+
+    beans_register_widget_area( array(
+        'name' => 'Below Blogroll',
+        'id' => 'below-blogroll',
+        'beans_type' => 'stack'
+    ) );
+}
+
+beans_add_smart_action('beans_posts_pagination_before_markup', 'flipster_below_blogroll_widget_output');
+//Display the Widget area
+function flipster_below_blogroll_widget_output() {
+	?>
+	<div class="tm-below-blogroll-widget-area">
+			<?php echo beans_widget_area( 'below-blogroll' ); ?>
+	</div>
+	<?php
+}
+
+// Register a widget area below post content.
+add_action( 'widgets_init', 'flipster_below_post_widget_area' );
+
+function flipster_below_post_widget_area() {
+
+    beans_register_widget_area( array(
+        'name' => 'Below Post',
+        'id' => 'below-post',
+        'beans_type' => 'stack'
+    ) );
+}
+
+beans_add_smart_action('beans_post_navigation_before_markup', 'flipster_below_post_widget_output');
+//Display the Widget area
+function flipster_below_post_widget_output() {
+	?>
+	<div class="tm-below-post-widget-area">
+			<?php echo beans_widget_area( 'below-post' ); ?>
+	</div>
+	<?php
+}
 
 // Add the footer menu
 beans_add_smart_action( 'beans_footer_prepend_markup', 'flipster_footer_menu' );
