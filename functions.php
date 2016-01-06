@@ -247,3 +247,27 @@ function flipster_footer() { ?>
   <a href="http://themes.kanishkkunal.in/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
 <?php }
+
+//Customizer fields
+
+//Additional Header & Footer Codes (for Google Analytics)
+add_action( 'init', 'flipster_customization_fields' );
+function flipster_customization_fields() {
+
+	$fields = array(
+		array(
+			'id' => 'flipster_head_code',
+			'label' => __( 'Additional Head Code', 'flipster' ),
+			'type' => 'textarea',
+			'default' => ''
+		)
+	);
+
+	beans_register_wp_customize_options( $fields, 'flipster_custom_code', array( 'title' => __( 'Custom Code', 'flipster' ), 'priority' => 1100 ) );
+}
+
+add_action('beans_head_append_markup', 'flipster_custom_foorer_code');
+
+function flipster_custom_foorer_code() {
+	echo get_theme_mod( 'flipster_head_code', '' );
+}
