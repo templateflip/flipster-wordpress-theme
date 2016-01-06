@@ -251,6 +251,16 @@ function flipster_footer() { ?>
 
 <?php }
 
+
+//Setup Widgets
+beans_add_smart_action( 'widgets_init', 'flipster_register_widgets');
+function flipster_register_widgets() {
+			//Include widget classes
+	 		require_once('widgets/posts.php');
+	 		// Regidter widgets
+			register_widget('Flipster_Posts_Widget');
+}
+
 //Customizer fields
 
 //Additional Header & Footer Codes (for Google Analytics)
