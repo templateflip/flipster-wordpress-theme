@@ -266,7 +266,7 @@ beans_add_smart_action( 'beans_footer_credit_right_text_output', 'flipster_foote
 
 function flipster_footer() { ?>
 
-  <a href="http://themes.kanishkkunal.in/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
+  <a href="https://kkthemes.com/wordpress/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
 <?php }
 
