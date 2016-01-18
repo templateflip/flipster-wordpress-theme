@@ -276,8 +276,10 @@ beans_add_smart_action( 'widgets_init', 'flipster_register_widgets');
 function flipster_register_widgets() {
 			//Include widget classes
 	 		require_once('widgets/posts.php');
+	 		require_once('widgets/ads.php');
 	 		// Regidter widgets
 			register_widget('Flipster_Posts_Widget');
+			register_widget('Flipster_Ads_Widget');
 }
 
 //Customizer fields
