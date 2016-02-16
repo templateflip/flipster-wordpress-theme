@@ -109,6 +109,18 @@ body:not(.single) .uk-article,
 .tm-posts-grid {
 	.tm-article-image {
 		margin: -@panel-box-padding -@panel-box-padding 15px -@panel-box-padding;
+		overflow: hidden;
+
+		img {
+			-webkit-transition: 0.4s ease;
+  		transition: 0.4s ease;
+		}
+
+		img:hover {
+			-ms-transform: scale(1.08); /* IE 9 */
+   		-webkit-transform: scale(1.08); /* Safari */
+    	transform: scale(1.08);
+		}
 	}
 }
 
@@ -298,6 +310,10 @@ body:not(.single) .uk-article,
 }
 
 /* Additional Styles */
+a {
+	transition: color 0.2s linear;
+}
+
 .well {
     background-color: #eee;
     padding: 30px;
