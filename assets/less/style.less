@@ -217,13 +217,20 @@ body:not(.single) .uk-article,
 
 .widget_tag_cloud .tagcloud a {
 	display: inline-block;
-	font-size: 13px;
-	line-height: 30px;
-	background: #fff;
-	padding: 3px 7px 4px;
-	margin-bottom: 2px;
-	border: 1px solid @global-border;
+	font-size: 12.5px;
+	font-weight: 700;
+	line-height: 25px;
+	background: @global-link-color;
+	color: #fff;
+	padding: 3px 10px 4px;
+	margin-bottom: 3px;
+	border: none;
 	border-radius: @global-border-radius;
+	text-decoration: none;
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+	background: @global-link-hover-color;
 }
 
 
