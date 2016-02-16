@@ -194,7 +194,6 @@ body:not(.single) .uk-article,
 
  .tm-posts-widget li img {
  	margin-right: 8px;
-	border: 1px solid @global-border;
  	padding-top: 0;
  }
 
@@ -206,7 +205,8 @@ body:not(.single) .uk-article,
  }
 
  .tm-posts-widget li a:hover {
-	 color: @global-link-hover-color;
+	 background: @global-link-color;
+	 color: #fff;
  }
 
 .widget_calendar caption {
@@ -239,17 +239,21 @@ body:not(.single) .uk-article,
 	font-size: 12.5px;
 	font-weight: 700;
 	line-height: 25px;
-	background: @global-link-color;
-	color: #fff;
+	background: #fff;
+	color: lighten(@base-heading-color, 20);
 	padding: 3px 10px 4px;
-	margin-bottom: 3px;
-	border: none;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	border: 1px solid @global-border;
+	border-left: 2px solid @global-link-color;
+	border-right: 2px solid @global-link-color;
 	border-radius: @global-border-radius;
 	text-decoration: none;
 }
 
 .widget_tag_cloud .tagcloud a:hover {
-	background: @global-link-hover-color;
+	background: @global-link-color;
+	color: #fff;
 }
 
 
