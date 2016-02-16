@@ -12,16 +12,21 @@ remove_theme_support( 'beans-default-styling' );
 
 
 // Enqueue uikit assets
-beans_add_smart_action( 'beans_uikit_enqueue_scripts', 'flipster_enqueue_uikit_assets', 5 );
+beans_add_smart_action( 'beans_uikit_enqueue_scripts', 'flipster_enqueue_assets', 5 );
 
-function flipster_enqueue_uikit_assets() {
-
+function flipster_enqueue_assets() {
+	//Enqueue fonts
+	wp_enqueue_style( 'tm-google-fonts', 'https://fonts.googleapis.com/css?family=Titillium+Web:400,700', false );
+	
 	// Enqueue uikit overwrite theme folder
 	beans_uikit_enqueue_theme( 'flipster', get_stylesheet_directory_uri() . '/assets/less/uikit' );
 
 	// Add the theme style as a uikit fragment to have access to all the variables
 	beans_compiler_add_fragment( 'uikit', get_stylesheet_directory_uri() . '/assets/less/style.less', 'less' );
 
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
+		wp_enqueue_script( 'comment-reply' );
 }
 
 //Setup Theme
