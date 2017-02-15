@@ -67,7 +67,7 @@ function flipster_setup_document() {
 	beans_remove_attribute( 'beans_menu_item_child_indicator', 'class', 'uk-margin-small-left' );
 
 	// Post content
-	beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
+	//beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
 
 	// Post meta
 	beans_remove_action( 'beans_post_meta_categories' );
@@ -271,7 +271,7 @@ beans_add_smart_action( 'beans_footer_credit_right_text_output', 'flipster_foote
 
 function flipster_footer() { ?>
 
-  <a href="https://kkthemes.com/wordpress/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
+  <a href="https://templateflip.com/themes/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
 <?php }
 
