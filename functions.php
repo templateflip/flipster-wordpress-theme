@@ -257,11 +257,11 @@ function flipster_widget_after_post_content( $content ) {
 beans_add_smart_action( 'beans_footer_prepend_markup', 'flipster_footer_menu' );
 
 function flipster_footer_menu() {
-
 	wp_nav_menu( array( 'theme_location' => 'footer-menu',
 											'container' => 'nav',
 	 										'container_class' => 'tm-footer-menu uk-navbar uk-margin-bottom',
-											'menu_class' => 'uk-navbar-nav uk-text-small'
+											'menu_class' => 'uk-navbar-nav uk-text-small',
+                      'fallback_cb' => false
 										));
 
 }
@@ -270,7 +270,7 @@ function flipster_footer_menu() {
 beans_add_smart_action( 'beans_footer_credit_right_text_output', 'flipster_footer' );
 
 function flipster_footer() { ?>
-
+   
   <a href="https://templateflip.com/themes/flipster/" target="_blank" title="Flipster theme for WordPress">Flipster</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
 <?php }
