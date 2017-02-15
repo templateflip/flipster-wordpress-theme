@@ -67,7 +67,7 @@ function flipster_setup_document() {
 	beans_remove_attribute( 'beans_menu_item_child_indicator', 'class', 'uk-margin-small-left' );
 
 	// Post content
-	//beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
+	beans_add_attribute( 'beans_post_content', 'class', 'uk-text-large' );
 
 	// Post meta
 	beans_remove_action( 'beans_post_meta_categories' );
