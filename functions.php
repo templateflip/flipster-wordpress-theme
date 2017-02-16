@@ -59,8 +59,12 @@ function flipster_setup_document() {
  }
 
 	// Breadcrumb
-	if(!is_archive())
+	if(!is_archive()) {
 		beans_remove_action( 'beans_breadcrumb' );
+  }
+  else {
+    beans_remove_action('beans_post_archive_title');
+  }
 
 	// Navigation
 	beans_add_attribute( 'beans_sub_menu_wrap', 'class', 'uk-dropdown-center' );
